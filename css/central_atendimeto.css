@@ -1,0 +1,39 @@
+.service-title{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.service-card-title{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container-principal--service-card{
+    text-align: center;
+}
+
+.container-service-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.container-service-card p{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+button {
+    padding: 8px 16px;
+    background-color: #fd7e14;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #e9700e;
+}

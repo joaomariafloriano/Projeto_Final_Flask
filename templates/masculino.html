@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sports Haven</title>
+    <link rel="shortcut icon" href="../static/img/logo-02.webp" type="image/x-icon">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/css/style.css'>
+    <script src='main.js'></script>
+
+    <script src="https://kit.fontawesome.com/a00a6a8426.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+<body>
+    <header class="">
+        <a href="./index.html">
+          <img class="logo" src="../static/img/logo-02.webp" alt="Logo da empresa"/> 
+        </a>
+        <h1 class="nome_site">Sports Haven</h1>     
+        <div class="redes">
+            <div class="user">
+              <a href="">
+                <i style="color: #000;" class="bi bi-instagram"></i></div>
+              </a>
+            <div class="user">
+              <a href="">
+                <i style="color: #000;" class="bi bi-twitter-x"></i></div>
+              </a>
+            <div class="user">
+              <a href="">
+                <i style="color: #000;" class="bi bi-facebook"></i></div>
+              </a>
+            <div></div>
+            <div class="user">
+              <a href="">
+                <i style="color: #000;" class="bi bi-heart"></i></div>
+              </a>
+            <div class="user">
+              <a href="">
+                <i style="color: #000;" class="bi bi-cart3"></i></div>
+              </a>
+            <div class="user">
+              <a href="{{ url_for('login') }}">
+                <i style="color: #000;" class="bi bi-person-circle"></i></div>
+              </a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="{{ url_for('index') }}" class="btmenu">Inicio</a>
+        <a href="{{ url_for('feminino') }}" class="btmenu">Feminino</a>
+        <a href="{{ url_for('acessorios') }}" class="btmenu">Acessórios</a>
+        <a href="" class="btmenu">Artigos</a>
+        <a href="{{ url_for('central_atendimento') }}" class="btmenu">Atendimento</a>
+        <form class="form">
+            <input class="pesquisar-input" type="texto" placeholder="  Pesquisar" aria-label="Pesquisar">
+            <button class="pesquisar-btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+            <!-- <input type="button"> -->
+        </form>
+    </nav>
+
+    <div> <br>
+      <p class="mais-marcas">
+        <a href="#">NAVAGUE POR MASCULINO</a>
+      </p>
+    </div>
+  
+    <div class="carrosselmarcas">
+      <div>
+        <a href="{{ url_for('olympikus') }}">
+          <img src="../static/img/marca-01.png" alt="Imagem 1">
+        </a>
+      </div>
+      <div>
+        <a href="{{ url_for('puma') }}">
+          <img src="../static/img/marca-02.png" alt="Imagem 2">
+        </a>
+      </div>
+      <div>
+        <a href="{{ url_for('nike') }}">
+          <img src="../static/img/marca-03.png" alt="Imagem 3">
+        </a>
+      </div>
+      <div>
+        <a href="{{ url_for('reebok') }}">
+          <img src="../static/img/marca-04.png" alt="Imagem 4">
+        </a>
+      </div>
+      <div>
+        <a href="{{ url_for('fila') }}">
+          <img src="../static/img/marca-05.png" alt="Imagem 5">
+        </a>
+      </div>
+      <div>
+        <a href="{{ url_for('adidas') }}">
+          <img src="../static/img/marca-06.png" alt="Imagem 6">
+        </a>
+      </div>
+    </div>
+
+      <main>
+        <div class="principal">
+          
+            <div class="card-group">
+              <div class="card">
+                <div class="card-content">
+                  <p class="product-price">Frete Grátis para todo o Brasil</p>
+                </div>
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/bola-futebol.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Bola de Futebol</h2>
+                  <p class="product-price">R$ 219,99 no Pix <br> ou 3X de R$: 83,33</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-content">
+                  <p class="product-price">Frete Grátis para todo o Brasil</p>
+                </div>
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/bola-volei.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Bola de Vôlei</h2>
+                  <p class="product-price">R$ 119,99 no Pix <br> ou 3X de R$: 50,00</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-content">
+                  <p class="product-price">Frete Grátis para todo o Brasil</p>
+                </div>
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/bone-nike.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Boné Nike</h2>
+                  <p class="product-price">R$ 79,99 no Pix <br> ou 3X de R$: 26,66</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-content">
+                  <p class="product-price">Frete Grátis para todo o Brasil</p>
+                </div>
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/camisa-ciclismo.jpg" alt="Camisa de Ciclismo Masculina">
+                </a>
+                <div class="card-content">
+                  <h2>Camisa de Ciclismo Masculina</h2>
+                  <p class="product-price">R$ 119,99 no Pix <br> ou 3X de R$: 39,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/camisa-fla.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Camisa Clube de Regata do Flamengo</h2>
+                  <p class="product-price">R$ 79,99 no Pix <br> ou 2X de R$: 39,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/camisa-nike.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Camisa Nike Preta</h2>
+                  <p class="product-price">R$ 49,99 no Pix <br> ou 2X de R$: 24,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/meia.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Meia Ciclismo</h2>
+                  <p class="product-price">RR$ 29,99 no Pix <br> ou 2X de R$: 14,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+                
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/moleton-adidas.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Moleton Adidas Preto</h2>
+                  <p class="product-price">R$ 79,99 no Pix <br> ou 3X de R$: 26,66</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-group">
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/relogio.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Relógio Smartwatch</h2>
+                  <p class="product-price">R$ 89,99 no Pix <br> ou 3X de R$: 29,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/sapatilha-ciclismo.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Sapatilha Ciclismo Masculina</h2>
+                  <p class="product-price">R$ 229,99 no Pix <br> ou 3X de R$: 76,66</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/short-ciclismo.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Short Ciclismo Masculino</h2>
+                  <p class="product-price">R$ 229,99 no Pix <br> ou 3X de R$: 76,66</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="#" target="_blank">
+                  <img src="../static/img/img_masculino/short-dri-fit.jpg">
+                </a>
+                <div class="card-content">
+                  <h2>Calção Dri Fit Corrida Masculino</h2>
+                  <p class="product-price">R$ 79,99 no Pix <br> ou 2X de R$: 39,99</p>
+                  <a href="{{ url_for('login') }}" class="buy-button">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </main>
+
+      <footer>
+        <div class="elemento1">
+            <a href="#"><img src="../static/img/logo-02.webp" alt="Logo" width="80px"></a>© 2023 Sports Haven.
+        </div>
+        <div class="elemento2">
+            <!-- <a href="https://play.google.com/store/games?hl=pt_BR&gl=US&pli=1" target="_blank"><img src="" alt="Logo Google Play" width="160px" height="50px"></a> -->
+        </div>
+        <div class="elemento3">
+          <!-- <a href=""><i class="fa-brands fa-twitter"></i></a> -->
+          <h4>Forma de pagamento:</h4>
+          <img class="cartoes" src="../static/img/cartoes.png" alt="cartões">
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
